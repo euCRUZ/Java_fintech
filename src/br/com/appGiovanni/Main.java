@@ -1,17 +1,20 @@
 package br.com.appGiovanni;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        Despesa transacao = new Despesa();
-        Ganhos ganhos = new Ganhos();
+        GerenciadorDeTransacoes gerenciador = new GerenciadorDeTransacoes();
 
-        transacao.adicionarDespesa("Alimentação", 100.00);
+        gerenciador.adicionarTransacao("Despesa", "Compras", 850.58);
+        gerenciador.adicionarTransacao("Despesa", "Alimentação", 100.0);
+        gerenciador.adicionarTransacao("Receita", "Salário", 2000.0);
 
-        ganhos.adicionarGanhos("Salário", 2000.00);
+        gerenciador.mostrarDespesa();
 
-
-
-
+        //gerenciador.mostrarReceita();
+        //gerenciador.mostrarTransacoesRecentes();
+        batata doce!
     }
 }
